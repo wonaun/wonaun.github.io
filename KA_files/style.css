@@ -1,0 +1,36 @@
+.img-centerd {
+    max-width: 99%;
+}
+
+
+
+pre {
+  white-space: pre-wrap;
+  overflow: auto;
+  border: 1px dotted red;
+  width: 32ch;
+  float: left;
+  margin: .5em;
+  min-height: 7em;
+}
+
+.break {
+  word-break: break-all;
+}
+
+.cancel {
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.to-normal {
+  word-break: normal;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
+
+pre:before {
+  content: attr(class) "\A0\A";
+  color: blue;
+}
